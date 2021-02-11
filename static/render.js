@@ -1,37 +1,37 @@
 var len = $('.section').length;
 var i = 0;
 
+//show first section
 $(".section").hide();
+$(".section:nth-child(1)").show();
 
-$(".section:nth-child("+(i+1)+")").show();
-
-console.log(len);
-
+//button based on number of sections 
+//0 - no button, 1 - submit, otherwise - next
 if (len == 0)
-	$("#next").hide();
-else if(len == 1)
-	$("#next").html("submit");
+    $("#next").hide();
+else if (len == 1)
+    $("#next").html("submit");
 
+//button click
+$("#next").click(function() {
+	
+	//pause videos
+    $("video").each(function() {
+        $(this).get(0).pause();
+    });
 
+    ++i;
+	
+	//show next section
+    $(".section:nth-child(" + i + ")").hide();
+    $(".section:nth-child(" + (i + 1) + ")").show();
 
-$("#next").click(function(){
+	//last page
+    if (i == len - 1)
+        $("#next").html("submit");
 	
-	$("video").each(function() {
-		$(this).get(0).pause();
-	});
-	
-	++i;
-	
-	$(".section:nth-child("+i+")").hide();
-	$(".section:nth-child("+(i+1)+")").show();
-	
-	console.log(i);
-	
-	
-	if ( i == len-1)
-		$("#next").html("submit");
-
-	if (i == len)
-		$("body").html("<h1>Thank You!</h1>");
+	//done
+    if (i == len)
+        $("body").html("<h1>Thank You!</h1>");
 
 });

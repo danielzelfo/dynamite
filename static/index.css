@@ -1,0 +1,95 @@
+body {
+	background-color: #1e1e1e;
+	color: white;
+}
+
+.content * {
+	display: block;
+}
+
+.information {
+	padding: 10px;
+}
+
+.information div {
+	padding: 10px;
+}
+
+.information div * {
+	display: inline;
+}
+
+input.contentInput {
+	min-width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+select.type {
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: white;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+input.contentInput:hover,
+textarea.contentInput:hover,
+select.type:hover {
+	background-color: rgba(255, 255, 255, .25);
+}
+
+.section {
+	line-height: 5;
+}
+
+.split {
+	height: 95%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding: 10px;
+}
+
+.split hr {
+	position: relative;
+	left: -20px;
+}
+
+
+/* Control the left side */
+
+.left {
+	left: 0;
+}
+
+
+/* Control the right side */
+
+.right {
+	right: 0;
+	width: 45%;
+}
+
+.right .btn,
+.right .ttl {
+	margin-left: 30px;
+}
+
+.right .zero {
+	min-height: 100px;
+}
+
+.right #lessonview {
+	top: 0;
+	left: 0;
+	width: 99%;
+	border: none;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	background-color: white;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page  {{current_page}} </title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+		<style>h1, p, textarea, video{min-width: 50%} textarea{min-height: 50vh}</style>
+	</head>
+	<body>
+		<div class="main">
+			{{ sections }}
+		</div>
+		<button class='btn' id='next'>next</button>
+	</body>
+	{{ globalscripts }}
+	<script type='text/javascript' src='{{ url_for('static', filename='render.js') }}'></script>
+</html>

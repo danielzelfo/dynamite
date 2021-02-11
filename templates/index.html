@@ -3,46 +3,46 @@
 	<head>
 		<title>Dynamite</title>
 		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
-		
-		
-		
-		
-		
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='index.css') }}">
 	</head>
 	<body>
-		<h1 class="title main">Welcome to Dynamite - An Interactive Learning Tool</h1>
-		<div class="information main">
-			<div>
-				<h2>Current Page Identifier: </h2>
-				<h2 id="pageID">{{page}}</h2>
+		<div class="split left">
+			<h1 class="title">Welcome to Dynamite - An Interactive Learning Tool</h1>
+			<div class="information">
+				<div>
+					<h2>Current Page Identifier: </h2>
+					<h2 id="pageID">{{page}}</h2>
+				</div>
+				<div>
+					<h3>Link: </h3>
+					<a id="pageLink" target="_blank" href="/page?page={{page}}">/page?page={{page}}</a>
+				</div>
 			</div>
-			<div>
-				<h3>Link: </h3>
-				<a id="pageLink" href="/page?page={{page}}">/page?page={{page}}</a>
+			<div class="sections">
+				{% include 'includes/section.html'   %}
 			</div>
+			<a href=# id=add><button class='btn'>Add Section</button></a>
 		</div>
-		<div class="sections">
-			{% include 'includes/section.html'   %}
+		<div class="split right">
+			<div class="zero">
+				<h2 class="ttl">Live View: </h2>
+				<button class='btn'onclick="document.getElementById('lessonview').contentWindow.location.reload();">refresh</button>
+			</div>
+			<iframe id="lessonview" src="/page?page={{page}}"></iframe>
 		</div>
-		<a href=# id=add><button class='btn'>Add Section</button></a>
 	</body>
-	
-	
 	{% include 'includes/global_scripts.html' %}
-		
 	<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
-	
 	<script type="text/javascript">
-	$(function() {
-		$('a#add').on('click', function(e) {
-			e.preventDefault();
-			$(".sections").append("{% include 'includes/section.html'   %}");
-			$.get('/addSection', {
-				pageID: $("#pageID").html()
+		$(function() {
+			$('a#add').on('click', function(e) {
+				e.preventDefault();
+				$(".sections").append("{% include 'includes/section.html'   %}");
+				$.get('/addSection', {
+					pageID: $("#pageID").html()
+				});
+				return false;
 			});
-			return false;
 		});
-	});
 	</script>
-	
 </html>

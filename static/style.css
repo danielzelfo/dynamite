@@ -1,64 +1,28 @@
-body{	
+body {
 	padding: 10px;
 }
 
-.title{
+.title {
 	text-align: center;
 }
 
-.content *{
-	display: block;
-}
-
-
-.information.main {
-	padding: 10px;
-}
-
-.information.main div {
-	padding: 10px;
-}
-
-.information.main div *{
-	display: inline;
-}
-
-input.contentInput{
-	min-width: 300px;
-	border: 1px solid black;
-	padding: 10px;
+button.btn {
+	padding: 5px;
 	border-radius: 5px;
-	
+	padding: 5x 10px;
+	border: 1px solid black;
+	margin-top: 10px;
+	background-color: rgba(255, 255, 255, .5);
 }
-textarea.contentInput{
+
+button.btn:hover {
+	background-color: rgba(255, 255, 255, .625);
+}
+
+textarea.contentInput {
 	min-width: 50%;
 	min-height: 100px;
 	border: 1px solid black;
 	border-radius: 2.5px;
-}
-
-select.type{
-		border: 1px solid black;
-	  padding: 10px;
-	  border-radius: 5px;
-	  background-color: white;
-	 
-	
-}
-
-.section {
-	line-height:  5;
-}
-
-button.btn{
-	padding: 5px;
-    border-radius: 5px;
-	padding: 5x  10px;
-	border: 1px solid black;
-	margin-top: 10px;
-}
-
-button.btn:hover{
-	background-color: black;
-	color: white;
+	background-color: rgba(255, 255, 255, .2);
 }
