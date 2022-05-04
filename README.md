@@ -24,15 +24,15 @@ Dynamite will also evolve to allow for collaboration between multiple people. Th
 ## Demo
 
 ##### First, you must enter the content of the lesson. You can add as many sections as you need for the lesson. By changing the section type, the type of content that you will need to fill out will change. 
-![Dynamite Create Lesson 1](https://danielzelfo.github.io/img/min/dynamite/dynamite-1.png)
+![Dynamite Create Lesson 1](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-1.png)
 ##### Dynamite shows the url for the lesson webpage at the top of the page. Opening that will show you the resulting lesson webpage.
-![Dynamite Create Lesson 2](https://danielzelfo.github.io/img/min/dynamite/dynamite-2.png)
+![Dynamite Create Lesson 2](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-2.png)
 
 ##### Here, by going to the provided url, we can see the webpage that was created.
-![Dynamite View Lesson 1](https://danielzelfo.github.io/img/min/dynamite/dynamite-3.png)
+![Dynamite View Lesson 1](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-3.png)
 #####  Dynamite shows one section of the lesson at a time. 
-![Dynamite View Lesson 2](https://danielzelfo.github.io/img/min/dynamite/dynamite-4.png)
+![Dynamite View Lesson 2](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-4.png)
 ##### By pressing next, the next section of the lesson is show. 
-![Dynamite View Lesson 3](https://danielzelfo.github.io/img/min/dynamite/dynamite-5.png)
+![Dynamite View Lesson 3](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-5.png)
 ##### At the end of the lesson, a submit button can be clicked to complete the lesson and submite any answers.
-![Dynamite View Lesson 4](https://danielzelfo.github.io/img/min/dynamite/dynamite-6.png)
+![Dynamite View Lesson 4](https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-6.png)
